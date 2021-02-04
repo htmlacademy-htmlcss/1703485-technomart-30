@@ -1,0 +1,340 @@
+:root {
+    --basic-red: #EE3643;
+    --basic-black: #000000;
+    --basic-extra-blue: #293449;
+    --basic-blue: #32425C;
+    --basic-light-blue: #F1F5F7;
+    --basic-green: #63A63E;
+    --basic-white: #ffffff;
+    --basic-beige: #F9F5F0;
+    --basic-orange: #FFD180;
+    --basic-grey: #A9A9A9;
+
+
+    --orange-light: #FFBF47;
+    --orange-light: #FFC047;
+    --light-blue: #3BBCE3;
+    --pink: #DC91D8;
+    --green: #8ED78F;
+    --light-grey: #F3F7F9;
+  }
+
+  .main-header {
+    background-color: rgba(0, 0, 0, 0.0001);
+  }
+
+  .user-nav {
+    margin: 0;
+    padding: 0;
+    font-family: "Cuprum";
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #293449;
+  }
+
+  a {
+    font-family: "Cuprum";
+    text-decoration: none;
+  }
+
+  button {
+    border: none;
+  }
+
+  .user-nav a {
+    color: var(--basic-white);
+    font-size: 18px;
+  }
+
+  .button {
+    background-color: var(--basic-red);
+    color: var(--basic-white);
+  }
+
+  .order {
+    background-color: var(--basic-green);
+    font-size: 18px;
+    padding: 9px 0 9px 0;
+    display: block;
+    width: 150px;
+    text-align: center;
+  }
+
+  .header-logo {
+    padding: 13px 0 13px 0;
+    display: block;
+    width: 220px;
+    text-align: center;
+    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  }
+
+  .slogan {
+    font-family: "Cuprum";
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--basic-red);
+    line-height: 23px;
+  }
+
+  .phone {
+    font-family: "Cuprum";
+    font-weight: 700;
+    color: var(--basic-red);
+    font-size: 21px;
+  }
+
+  .header-adress {
+    font-family: "Cuprum";
+    font-weight: 400;
+    color: var(--basic-blue);
+    font-size: 14px;
+  }
+
+  .login {
+    font-family: "Cuprum";
+    font-weight: 400;
+    color: var(--basic-black);
+    font-size: 21px;
+    background: rgba(0, 0, 0, 0.0001);
+  }
+
+  .nav {
+    font-size: 18px;
+    background-color: var(--basic-blue);
+    list-style: none;
+    padding: 16px 0 20px 0;
+  }
+
+  .nav li {
+    display: inline-block;
+  }
+
+  .nav li a {
+    color: var(--basic-white);
+  }
+
+  .site li a {
+    color: var(--basic-light-blue);  
+  }
+
+  .menu li a {
+    color: var(--basic-orange);
+  }
+
+  h1, .invisible {
+    visibility: hidden;
+  }
+
+  .subtitle {
+    font-family: "Cuprum";
+    font-weight: 400;
+    color: var(--basic-blue);
+    font-size: 30px;
+  }
+
+  .subtitle .subject {
+    font-family: "Cuprum";
+    font-weight: 400;
+    color: var(--basic-black);
+    font-size: 30px;
+  }
+
+  h3 {
+    font-family: "Cuprum";
+    font-weight: 700;
+    color: var(--basic-white);
+    font-size: 24px;
+  }
+
+  .features-material {
+    background-color: var(--orange-light);
+    width: 300px;
+    height: 123px;
+    padding: 14px 0 20px 0;
+  }
+
+  .features-instrument {
+    background-color: var(--light-blue);
+    width: 300px;
+    height: 123px;
+    padding: 14px 0 20px 0;
+  }
+
+  .features-technic {
+    background-color: var(--pink);
+    width: 300px;
+    height: 123px;
+    padding: 14px 0 20px 0;
+  }
+
+  .features-discount {
+    background-color: var(--green);
+    width: 300px;
+    height: 123px;
+    padding: 14px 0 20px 0;
+  }
+
+  .features-delivery {
+    background-color: var(--orange-light);
+    width: 300px;
+    height: 123px;
+    padding: 14px 0 20px 0;
+  }
+
+  .features-button {
+    font-size: 14px;
+    color: var(--basic-white);
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px 0 10px 0;
+    display: block;
+    width: 135px;
+    text-align: center;
+  }
+
+  .catalog {
+    width: 192px;
+    padding: 11px 0 9px 0;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+  }
+
+  .product-name {
+    font-family: "PT Sans";
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--basic-black);
+  }
+
+  .full-price {
+    font-family: "PT Sans";
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--basic-grey);
+    text-decoration: line-through;
+  }
+
+  .discount-price {
+    font-family: "PT Sans";
+    font-weight: 700;
+    font-size: 17px;
+  }
+  .discount-price {
+    width: 141px;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    display: block;
+  }
+
+  .text {
+    font-family: "PT Sans";
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--basic-black);
+  }
+
+  .button-benefit-item {
+    font-family: "Cuprum";
+    font-weight: 700;
+    font-size: 21px;
+    color: var(--basic-white);
+    width: 240px;
+    padding-top: 13px;
+    padding-right: 17px;
+    padding-bottom: 18px;
+    padding-left: 22px;
+    background-color: var(--basic-blue);
+    display: block;
+    border: none;
+    text-align: left;
+  }
+
+  .benefits {
+    background-color: var(--basic-light-blue);
+  }
+
+  .transport-list li {
+    font-family: "Cuprum";
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--basic-black);
+    list-style: none;
+  }
+
+  .credit {
+    width: 195px;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+  }
+
+.more {
+  width: 220px;
+  padding: 11px 0 9px 0;
+  text-align: center;
+  display: block;
+  text-transform: uppercase;
+}
+
+.writeus {
+  font-family: "Cuprum";
+  font-weight: 400;
+  font-size: 14px;
+  width: 300px;
+  padding: 11px 0 9px 0;
+  text-align: center;
+  display: block;
+  text-transform: uppercase;
+}
+
+.footer-logo {
+  padding: 20px 0 20px 0;
+  display: block;
+  width: 220px;
+  text-align: center;
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
+.footer-nav, .footer-features {
+  background-color: var(--basic-blue);
+}
+
+.footer-adress {
+  font-family: "Cuprum";
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--light-grey);
+}
+
+.footer-adress a{
+  font-family: "Cuprum";
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--light-grey);
+}
+
+.contacts {
+  background-color: var(--basic-extra-blue);
+}
+
+.contact-caption {
+  font-family: "Cuprum";
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--basic-white);
+}
+.contact-link {
+  font-family: "Cuprum";
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--basic-orange);
+}
+
+.menu, .footer-adress, .site, .contact-caption {
+  margin: 0;
+}
+
+.map {
+  margin-bottom: 25px;
+}
