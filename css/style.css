@@ -21,6 +21,7 @@
     --shadow: #405069;
     --red-active: #BA2732;
     --bookmark-active: #161D29;
+    --bookmark-active-grey: #8A8E94;
     --green-order: #B1D39E;
     --basket-active: #9499A4;
     --grey-hover: #C5C5C5;
@@ -28,6 +29,7 @@
     --blue-active: #1D2739;
     --red-hover: #CA2C37;
     --red-active: #BA2732;
+
   }
 
   .page {
@@ -35,7 +37,7 @@
     font-weight: 400;
   }
   .main-header {
-    background-color: var(--color-light-blue);
+    background-color: var(--basic-light-blue);
   }
 
   .user-nav {
@@ -70,6 +72,7 @@
 
   .bookmark:active {
     background-color: var(--bookmark-active);
+    color: var(--bookmark-active-grey);
   }
 
   .bookmark:hover {
@@ -183,6 +186,7 @@
   .menu-list-item:active {
     color: var(--basic-orange);
     opacity: 0.5;
+    text-decoration-line: none;
   }
   
   .site-list-item:active {
@@ -210,6 +214,12 @@
     font-weight: 700;
     color: var(--basic-white);
     font-size: 24px;
+  }
+
+  .new {
+    font-size: 14px;
+    color: var(--basic-white);
+    background-color: var(--basic-red);
   }
 
   .features-material {
@@ -355,10 +365,6 @@
     color: var(--basic-white);
   }
 
-  .button-benefit-item:active {
-    background: var(--basic-white);
-  }
-
   .benefits {
     background-color: var(--basic-light-blue);
   }
@@ -383,7 +389,7 @@
   display: inline-block;
 }
 
-.writeus {
+.contact-button {
   font-size: 14px;
   padding: 11px 61px 9px 62px;
   text-align: center;
@@ -431,6 +437,7 @@
 
 .contact-link:active {
   color: var(--basic-red);
+  text-decoration-line: none;
 }
 
 .menu, .footer-adress, .site, .contact-caption {
