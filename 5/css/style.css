@@ -1,0 +1,600 @@
+:root {
+    --basic-red: #EE3643;
+    --basic-black: #000000;
+    --basic-extra-blue: #293449;
+    --basic-blue: #32425C;
+    --basic-light-blue: #F1F5F7;
+    --basic-green: #63A63E;
+    --basic-white: #ffffff;
+    --basic-beige: #F9F5F0;
+    --basic-orange: #FFD180;
+    --basic-orange-light: #FFBF47;
+    --basic-grey: #A9A9A9;
+
+    --orange-light: #FFC047;
+    --light-blue: #3BBCE3;
+    --color-light-blue: #f1f5f7;
+    --pink: #DC91D8;
+    --green: #8ED78F;
+    --green-success: #5FBB2D;
+    --light-grey: #F3F7F9;
+    --shadow: #405069;
+    --red-active: #BA2732;
+    --bookmark-active: #161D29;
+    --bookmark-active-grey: #8A8E94;
+    --green-order: #B1D39E;
+    --basket-active: #9499A4;
+    --grey-hover-active: #C5C5C5;
+    --grey-active: #A9A9A9;
+    --blue-active: #1D2739;
+    --red-hover: #CA2C37;
+    --red-active: #BA2732;
+    --grey-logout: #3D546F;
+    --directory-section-background: #F2F6F8;
+    --beige-row-filter-sorcing: #F7F3EC;
+    --color-none-active: #ADAAA5;
+    --grey-border: #E5E5E5;
+    --green-shadow: #367315;
+  }
+
+  .page {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-weight: 400;
+  }
+  .main-header {
+    background-color: var(--basic-light-blue);
+  }
+
+  .user-nav {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    background-color: #293449;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  button {
+    border: none;
+  }
+
+  .user-nav a {
+    color: var(--basic-white);
+    font-size: 18px;
+  }
+
+  .button, .features-button, .contact-button {
+    background-color: var(--basic-red);
+    color: var(--basic-white);
+    text-transform: uppercase;
+  }
+
+  .search:focus {
+    color: var(--basic-black);
+  }
+
+  .bookmark:active {
+    background-color: var(--bookmark-active);
+    color: var(--bookmark-active-grey);
+  }
+
+  .order {
+    background-color: var(--basic-green);
+    font-size: 18px;
+    padding: 9px 16px 9px 19px;
+    display: inline-block;
+  }
+
+  .order:hover {
+    background-color: var(--green-success);
+  }
+
+  .order:active {
+    color: var(--green-order);
+  }
+
+  .basket:active {
+    color: var(--basket-active)
+  }
+
+  .basket:hover {
+    color: var(--basic-white);
+  }
+
+  .header-logo {
+    padding: 13px 0 13px 0;
+    display: block;
+    width: 220px;
+    text-align: center;
+    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  }
+
+  .header-logo:active {
+    background-color: var(--red-active);
+  }
+
+  .slogan {
+    font-size: 16px;
+    color: var(--basic-red);
+    line-height: 23px;
+  }
+
+  .phone {
+    font-weight: 700;
+    color: var(--basic-red);
+    font-size: 21px;
+  }
+
+  .header-adress {
+    color: var(--basic-blue);
+    font-size: 14px;
+  }
+
+  .login {
+    color: var(--basic-black);
+    font-size: 21px;
+    background: var(--basic-white);
+  }
+
+.order-cabinet {
+  font-size: 16px;
+  color: var(--basic-blue);
+}
+
+  .login:hover, .order-cabinet:hover {
+    color: var(--basic-red);
+  }
+
+  .login:active {
+    color: var(--grey-hover);
+  }
+
+  .card-file:hover {
+    color: var(--basic-black);
+  }
+
+  .card-file:active {
+    color: var(--grey-hover-active);
+  }
+
+  .nav {
+    font-size: 18px;
+    background-color: var(--basic-blue);
+    list-style: none;
+    padding: 16px 0 20px 0;
+  }
+
+  .nav li {
+    display: inline-block;
+  }
+
+  .nav-list-item{
+    color: var(--basic-white);
+    padding: 16px 24px 20px 27px;
+  }
+
+  .nav-list-item:hover{
+    background-color:var(--basic-extra-blue);
+  }
+
+  .nav-list-item:active{
+    background-color:var(--blue-active);
+    color: var(--grey-active);
+  }
+
+  .site-list-item {
+    color: var(--basic-light-blue); 
+  }
+
+  .menu-list-item {
+    color: var(--basic-orange);
+  }
+
+  .site-list-item:hover, .menu-list-item:hover {
+    text-decoration-line: underline;
+  }
+
+  .site-list-item:active {
+    color: var(--color-light-blue);
+    opacity: 0.5;
+    text-decoration-line: none;
+  }
+
+  .menu-list-item:active {
+    color: var(--basic-orange);
+    opacity: 0.5;
+    text-decoration-line: none;
+  }
+  
+  .site-list-item:active {
+    color: var(--basic-light-blue);
+    opacity: 0.5;
+  }
+
+  .invisible {
+    visibility: hidden;
+  }
+
+  .subtitle {
+    color: var(--basic-blue);
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .subject {
+    color: var(--basic-black);
+    font-size: 30px;
+  }
+
+  h3 {
+    font-weight: 700;
+    color: var(--basic-white);
+    font-size: 24px;
+  }
+
+  .new {
+    font-size: 14px;
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+  }
+
+  .features-material {
+    background-color: var(--basic-orange-light);
+    width: 300px;
+    height: 123px;
+    padding: 14px 0 20px 0;
+  }
+
+  .features-instrument {
+    background-color: var(--light-blue);
+    width: 300px;
+    height: 123px;
+    padding: 14px 0 20px 0;
+  }
+
+  .features-technic {
+    background-color: var(--pink);
+    width: 300px;
+    height: 123px;
+    padding: 14px 0 20px 0;
+  }
+
+  .features-discount {
+    background-color: var(--green);
+    width: 300px;
+    height: 123px;
+    padding: 14px 0 20px 0;
+  }
+
+  .features-delivery {
+    background-color: var(--orange-light);
+    width: 300px;
+    height: 123px;
+    padding: 14px 0 20px 0;
+  }
+
+  .features-button {
+    font-size: 14px;
+    color: var(--basic-white);
+    background: rgba(255, 255, 255, 0.3);
+    display: block;
+    padding: 10px 0 10px 0;
+    width: 135px;
+    text-align: center;
+  }
+
+  .features-button:hover {
+    background: rgba(197, 197, 197, 0.3);
+  }
+
+  .features-button:active {
+    background: var(--grey-active);
+    background: rgba(169, 169, 169, 0.3);
+  }
+
+  .catalog {
+    padding: 11px 0 9px 0;
+    text-align: center;
+    display: block;
+    width: 192px;
+  }
+
+  .catalog:hover {
+    background: var(--red-hover);
+  }
+
+  .catalog:active {
+    background: var(--red-active);
+  }
+
+
+  .product-name {
+    font-family: "PT Sans", "Tahoma", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--basic-black);
+  }
+
+  .row {
+    background-color: var(--basic-beige);
+    padding: 29px 28px 30px 14px;
+  }
+
+  .row-partners {
+    background-color: var(--basic-beige);
+    padding: 29px 28px 30px 19px;;
+  }
+
+  .full-price {
+    font-family: "PT Sans", "Tahoma", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--basic-grey);
+    text-decoration: line-through;
+  }
+
+  .discount-price {
+    font-family: "PT Sans", "Tahoma", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    padding: 10px 44px 10px 32px;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .text {
+    font-family: "PT Sans", "Tahoma", sans-serif;
+    font-size: 13px;
+    color: var(--basic-black);
+    line-height: 24px;
+  }
+
+  .button-benefit {
+    border: none;
+  }
+  /* Этот класс для будущей вертикальной тени справа */
+
+  .button-benefit-item {
+    font-weight: 700;
+    font-size: 21px;
+    color: var(--basic-white);
+    width: 240px;
+    padding-top: 13px;
+    padding-right: 17px;
+    padding-bottom: 18px;
+    padding-left: 22px;
+    background-color: var(--basic-blue);
+    display: block;
+    text-align: left;
+    border-top: 1px solid var(--shadow);
+    border-bottom: 1px solid var(--basic-extra-blue)
+  }
+
+  .active {
+    color: var(--basic-blue);
+    background-color: var(--basic-white);
+    border-top: 5px solid var(--basic-blue);
+  }
+
+  .button-benefit-item:hover {
+    background: var(--basic-extra-blue);
+    color: var(--basic-white);
+  }
+
+  .benefits {
+    background-color: var(--basic-light-blue);
+  }
+
+  .transport-list li {
+    font-size: 18px;
+    color: var(--basic-black);
+    list-style: none;
+  }
+
+  .credit {
+    padding: 10px 0 10px 0;
+    text-align: center;
+    display: block;
+    width: 195px;
+  }
+
+.more {
+  padding: 11px 0 9px 0;
+  text-align: center;
+  width: 220px;
+  display: inline-block;
+}
+
+.contact-button {
+  font-size: 14px;
+  padding: 11px 61px 9px 62px;
+  text-align: center;
+  display: block;
+}
+
+.footer-logo {
+  padding: 20px 0 20px 0;
+  display: block;
+  width: 220px;
+  text-align: center;
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
+.footer-nav, .footer-features {
+  background-color: var(--basic-blue);
+}
+
+.footer-adress {
+  font-size: 18px;
+  color: var(--light-grey);
+}
+
+.footer-adress a{
+  font-size: 18px;
+  color: var(--light-grey);
+}
+
+.contacts {
+  background-color: var(--basic-extra-blue);
+}
+
+.contact-caption {
+  font-size: 16px;
+  color: var(--basic-white);
+}
+
+.contact-link {
+  font-size: 16px;
+  color: var(--basic-orange);
+}
+
+.contact-link:hover {
+  text-decoration-line: underline;
+}
+
+.contact-link:active {
+  color: var(--basic-red);
+  text-decoration-line: none;
+}
+
+.menu, .footer-adress, .site, .contact-caption {
+  margin: 0;
+}
+
+.map {
+  margin-bottom: 25px;
+}
+
+.social:hover, .social:active {
+  background: var(--basic-red);
+}
+
+.breadcrumb, .assortment {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.breadcrumb-list {
+  list-style: none;
+}
+
+.directory-section {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: var(--basic-blue);
+  background-color: var(--directory-section-background);
+  padding: 29px 29px 30px 29px;
+}
+
+.parameter {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-weight: 700px;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.type-of-sorsing {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: var(--color-none-active);
+  padding: 0 0 2px 0;
+  border-bottom: 1px dotted var(--basic-red);
+}
+
+.type-of-sorsing:hover {
+  color: var(--basic-black);
+  opacity: 1;
+  text-decoration-color: var(--basic-red);
+  padding: 0 0 2px 0;
+  border-bottom: 1px solid var(--basic-red);
+}
+
+.active-type-of-sorsing {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: var(--basic-red);
+}
+
+.low-high, .type-of-sorsing, .type-of-sorsing:hover, .active-type-of-sorsing, .row-filter {
+  background-color: var(--beige-row-filter-sorcing);
+}
+
+.type-of-sorsing-button {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding: 10px 80px 10px 78px;
+  border: 1px solid var(--grey-border);
+  background: none;
+}
+
+.creator, .feed {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.buy {
+  background-color: var(--basic-green);
+  text-transform: uppercase;
+  padding: 10px 12px 10px 25px;
+  color: var(--basic-white);
+  border-bottom: 3px solid var(--green-shadow);
+  border-radius: 2px;
+}
+
+.add-to-bookmark {
+  background: none;
+  text-transform: uppercase;
+  padding: 11px 34px 9px 33px;
+  color: var(--basic-blue);
+  border: 3px solid var(--basic-green);
+  border-radius: 2px
+}
+
+.pagination-active {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 13px;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  padding: 8px 13px 8px 13px;
+  border: 3px solid var(--basic-red);
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.pagination {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 13px;
+  color: var(--basic-black);
+  background: none;
+  padding: 8px 13px 8px 13px;
+  border: 3px solid var(--grey-border);
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.next {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 13px;
+  color: var(--basic-black);
+  background: none;
+  padding: 10px 31px 10px 32px;
+  border: 3px solid var(--grey-border);
+  border-radius: 2px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
