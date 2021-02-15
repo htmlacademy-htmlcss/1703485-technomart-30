@@ -30,20 +30,23 @@
       <a class="basket" href="blank.html">Корзина:</a>
       <a class="order" href="blank.html">Оформить заказ</a>
     </div>
-  
-    <div>
-      <p class="slogan">
-        <i>Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</i>
-      </p>
-    </div>
 
-    <div>
-        <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-        <span class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-    </div>
+    <div class="header-container">
+      <div>
+        <p class="slogan">
+          <i>Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</i>
+        </p>
+      </div>
 
-    <a class="login" href="blank.html">Войти</a>
-    <a class="login registration" href="blank.html">Регистрация</a>
+      <div class="header-contact">
+          <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          <span class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+      </div>
+      <div class="header-login">
+      <a class="login" href="blank.html">Войти</a>
+      <a class="login registration" href="blank.html">Регистрация</a>
+      </div>
+    </div>
 
     <nav class="main-nav">
       <ul class="nav">
@@ -82,13 +85,12 @@
         <div class="features-slider">
           <!-- Слайд 1 -->
           <div>
-            <span class="new">new</span>
             <img src="img/puncher.jpg" width="620" height="266" alt="мужчина сверлит отверстие в стене перфоратором">
-            <h3>Перфораторы</h3>
+            <!-- <h3>Перфораторы</h3>
             <p>Настоящие мужские игрушки</p>
             <button class= "slider-button-next" type="button"><img src="img/icon-left.svg" alt="Вперед"></button>
             <button class= "slider-button-back" type="button"><img src="img/icon-left.svg" alt="Назад"></button>
-            <a class="button catalog" href="blank.html">Открыть каталог</a>
+            <a class="button catalog" href="blank.html">Открыть каталог</a> -->
           </div>
 
           <!-- Слайд 2 -->
@@ -119,8 +121,9 @@
           <h2 class="subtitle">Популярные товары</h2>
           <a class="button catalog" href="blank.html">Все популярные товары</a>
         </div>  
-
-          <a class="pruduct-item" href="blank.html">
+      
+        <section class="filter-result">
+          <a class="product-item" href="blank.html">
             <img src="img/bosch9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
             <p class="product-name">
               Перфоратор BOSCH<br>
@@ -130,7 +133,7 @@
             <span class="button discount-price">25500 P.</span>
           </a>
 
-          <a class="pruduct-item" href="blank.html">
+          <a class="product-item" href="blank.html">
             <span class="new">new</span>
               <img src="img/bosch20003000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
               <p class="product-name">
@@ -141,7 +144,7 @@
             <span class="button discount-price">15500 P.</span>
           </a>
 
-          <a class="pruduct-item" href="blank.html">
+          <a class="product-item" href="blank.html">
             <img src="img/bosch6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
             <p class="product-name">  
               Перфоратор BOSCH<br>
@@ -151,7 +154,7 @@
             <span class="button discount-price">25500 P.</span>
           </a>
 
-          <a class="pruduct-item" href="blank.html">
+          <a class="product-item" href="blank.html">
             <span class="new">new</span>
             <img src="img/bosch20003000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
             <p class="product-name">
@@ -161,6 +164,7 @@
             <span class="full-price">22500 Р.</span>
             <span class="button discount-price">12500 P.</span>
           </a>
+        </section>
       </section>
 
       <section class="partners">
@@ -168,6 +172,7 @@
           <h2 class="subtitle">Популярные производители</h2>
           <a class="button catalog" href="blank.html">Все производители</a>
         </div>
+        <section class="partner-item-list">
           <a class="partner-item" href="blank.html"><img src="img/logobosch.png" width="126" height="37" alt="BOSCH"></a>
           <a class="partner-item" href="blank.html"><img src="img/logomakita.png" width="123" height="40" alt="makita"></a>
           <a class="partner-item" href="blank.html"><img src="img/logodewalt.png" width="146" height="44" alt="dewalt"></a>
@@ -176,6 +181,7 @@
           <a class="partner-item" href="blank.html"><img src="img/logolg.png" width="121" height="73" alt="LG"></a>
           <a class="partner-item" href="blank.html"><img src="img/logoaeg.png" width="151" height="96" alt="AEG"></a>
           <a class="partner-item" href="blank.html"><img src="img/logometabo.png" width="206" height="73" alt="metabo"></a>
+        </section> 
       </section>
 
       <section class="benefits">
@@ -185,11 +191,12 @@
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
 
+      <div class="benefits-container">
         <div class="button-benefit">
           <button class="button-benefit-item active" type="button">Доставка</button>
           <button class="button-benefit-item" type="button">Гарантия</button>
           <button class="button-benefit-item" type="button">Кредит</button>
-      </div>
+        </div>
 
         <div class="benefit-item">
           <h2 class="subtitle">Доставка</h2>
@@ -201,7 +208,7 @@
           </p>
         </div>
 
-        <div class="benefit-item">
+        <!-- <div class="benefit-item">
           <h2 class="subtitle">Гарантия</h2>
           <p class="text">
             Если купленный у нас товар поломается или заискрит,<br>
@@ -219,7 +226,8 @@
             Кредитные консультанты придут вам на помощь.
           </p>
           <a class="button credit" href="blank.html">Отправить заявку</a>
-        </div>
+        </div> -->
+      </div>
       </section>
 
       <section class="main-description">
@@ -283,7 +291,7 @@
 
     </main>
 
-    <footer>
+    <footer class="main-footer">
       <section class="footer-nav">
 
         <div>
@@ -303,9 +311,11 @@
       </section>
 
       <section class="footer-features">
+        <div>
         <p class="footer-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         <a href="tel:+78125550555">+7 (812) 555-05-55</a>
         </p>
+      </div>
     
         <ul class="nav menu">
           <li><a class="menu-list-item" href="#">Материалы</a></li>
@@ -321,15 +331,21 @@
           Все права защищены
         </p>
 
-          <a class="social" href="#"><img src="img/icon-vk.svg" width="26" height="15" alt="Вконтакте"></a>
-          <a class="social" href="#"><img src="img/icon-fb.svg" width="12" height="22" alt="Фейсбук"></a>
-          <a class="social" href="#"><img src="img/icon-insta.svg" width="21" height="21" alt="Инстаграм"></a>
+      <div class="media">
+        <a class="social" href="#"><img src="img/icon-vk.svg" width="26" height="15" alt="Вконтакте"></a>
+        <a class="social" href="#"><img src="img/icon-fb.svg" width="12" height="22" alt="Фейсбук"></a>
+        <a class="social" href="#"><img src="img/icon-insta.svg" width="21" height="21" alt="Инстаграм"></a>
+      </div>
 
-          <span class="contact-caption">Обратная связь:</span>
-          <a class="contact-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      <div>
+        <span class="contact-caption">Обратная связь:</span>
+        <a class="contact-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      </div>
 
-          <span class="contact-caption">Разработано-</span>
-          <a class="contact-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+      <div>
+        <span class="contact-caption">Разработано-</span>
+        <a class="contact-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+      </div>
       </section>
     </footer>
 
