@@ -20,8 +20,8 @@
     --light-grey: #F3F7F9;
     --shadow: #405069;
     --red-active: #BA2732;
-    --bookmark-active: #161D29;
-    --bookmark-active-grey: #8A8E94;
+    --bookmark-basket-active: #161D29;
+    --bookmark--basket-active-grey: #8A8E94;
     --green-order: #B1D39E;
     --basket-active: #9499A4;
     --grey-hover-active: #C5C5C5;
@@ -113,17 +113,18 @@ input::placeholder {
 .search:focus {
   color: var(--basic-black);
   background-color: var(--basic-white);
-
 }
 
-.bookmark {
-  padding: 9px 0;
-  justify-self: end;
+.bookmark, .basket {
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-self: center;
 }
 
-.bookmark:active {
-  background-color: var(--bookmark-active);
-  color: var(--bookmark-active-grey);
+.bookmark:active, .basket:active {
+  background-color: var(--bookmark-basket-active);
+  color: var(--bookmark--basket-active-grey);
 }
 
 .order {
@@ -143,19 +144,6 @@ input::placeholder {
 
 .order:active {
   color: var(--green-order);
-}
-
-.basket {
-  justify-self: center;
-  padding: 9px 0;
-}
-
-.basket:active {
-  color: var(--basket-active)
-}
-
-.basket:hover {
-  color: var(--basic-white);
 }
 
 .header-logo {
@@ -266,7 +254,6 @@ background: var(--basic-light-blue);
   margin: 0 auto 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  justify-self: center;
 }
 
 .main-nav {
@@ -404,20 +391,26 @@ background: var(--basic-light-blue);
   background: url(../img/puncher.jpg);
   height: 266px;
 }
+
+.slider-overlay {
+  padding: 23px 0 21px 24px;
+  background: rgba(0, 0, 0, 0.25);
+}
   
 .slider-subtitle {
   font-weight: 700;
   font-size: 36px;
   text-transform: uppercase;
   color: var(--basic-white);
-  margin: 23px 0 0 24px ;
+  margin: 0;
+  padding: 0;
 }
 
 .slider-text {
   font-size: 18px;
   color: var(--basic-white);
   padding: 0;
-  margin: 0 0 0 24px;
+  margin: 0;
 }
 
 .features-discount {
@@ -462,11 +455,11 @@ background: var(--basic-light-blue);
   text-transform: uppercase;
 }
 
-.catalog:hover, .header-logo:hover, .footer-logo:hover {
+.button:hover, .catalog:hover, .header-logo:hover, .footer-logo:hover {
   background: var(--red-hover);
 }
 
-.catalog:active, .header-logo:active, .footer-logo:active {
+.button:active, .catalog:active, .header-logo:active, .footer-logo:active {
   background: var(--red-active);
 }
 
@@ -539,6 +532,8 @@ background: var(--basic-light-blue);
   display: block;
   width: 141px;
   margin-bottom: 21px;
+  background-color: var(--basic-red);
+  color: var(--basic-white);
 }
 
 .partner-item-list {
@@ -623,7 +618,6 @@ background: var(--basic-light-blue);
   margin: 0 auto;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  justify-self: end;
   margin-bottom: 70px;
 }
 
@@ -648,6 +642,7 @@ background: var(--basic-light-blue);
 
 .more {
   padding: 11px 0 9px 0;
+  margin: 0;
   text-align: center;
   width: 220px;
   display: inline-block;
