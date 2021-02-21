@@ -120,6 +120,13 @@ input::placeholder {
   color: var(--bookmark--basket-active-grey);
 }
 
+.catalog-basket {
+  background-color: var(--basic-red);
+  width: 136px;
+  justify-self: end;
+  justify-content: center;
+}
+
 .order {
   background-color: var(--basic-green);
   font-size: 18px;
@@ -184,7 +191,6 @@ input::placeholder {
 }
 
 .header-login {
-  display: inline-block;
   margin-top: 41px;
   justify-self: end;
 }
@@ -209,10 +215,6 @@ input::placeholder {
   margin-left: 10px;
 }
 
-.logout {
-  background: var(--basic-white);
-}
-
 .order-cabinet {
   font-size: 16px;
   color: var(--basic-blue);
@@ -230,12 +232,32 @@ input::placeholder {
   color: var(--grey-hover);
 }
 
+.card-file {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 299px;
+  background: var(--basic-white);
+  margin-bottom: 7px;
+}
+
 .card-file:hover {
   color: var(--basic-black);
 }
 
 .card-file:active {
   color: var(--grey-hover-active);
+}
+
+.user {
+width: max-content;
+line-height: 21px;
+/* без строгого указания высоты строки "login user" имеет высоту 48px */
+}
+
+.cabinet {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .header-container-wrap {
@@ -324,17 +346,26 @@ background: var(--basic-light-blue);
 }
 
 .subtitle {
+  color: var(--basic-black);
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.subject {
   color: var(--basic-blue);
   font-size: 30px;
   font-weight: 400;
   text-transform: uppercase;
-  margin-left: 28px;
+  margin: 67px 0 25px 0;
 }
 
-.subject {
-  color: var(--basic-black);
-  font-size: 30px;
-  margin-left: 0;
+.popular {
+  margin: 0;
+  padding-top: 29px;
+  padding-left: 28px;
 }
 
 .subheading {
@@ -466,6 +497,14 @@ background: var(--basic-light-blue);
   margin: 0 auto;
 }
 
+.page-catalog {
+  width: 940px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  align-content: start;
+}
+
 .filter-result {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -560,6 +599,7 @@ background: var(--basic-light-blue);
   font-size: 13px;
   color: var(--basic-black);
   line-height: 24px;
+  margin: 0;
 }
 
 .button-benefit {
@@ -595,15 +635,16 @@ background: var(--basic-light-blue);
   color: var(--basic-white);
 }
 
-.benefit-wrap {
+.info-wrap {
   background-color: var(--basic-light-blue);
+  padding-top: 64px;
 }
 
 .benefits {
   width: 940px;
-  margin: 0 auto 70px auto;
+  margin: 0 auto;
   display: grid;
-  grid-template-rows: auto auto 329px;
+  grid-template-rows: 1fr 1fr 329px;
 }
 
 .benefits-container {
@@ -613,22 +654,29 @@ background: var(--basic-light-blue);
 
 .main-description {
   width: 940px;
-  margin: 0 auto;
+  margin: 70px auto 56px auto;
   display: grid;
+  align-items: end;
   grid-template-columns: 2fr 1fr;
-  margin-bottom: 70px;
+}
+
+.main-description-item {
+  height: 100%;
+}
+
+.description {
+  margin-bottom: 20px;
 }
 
 .transport-list {
-  margin-block-start: 0;
-  margin-block-end: 20px;
+  margin-bottom: 8px;
 }
 
 .transport-list li {
   font-size: 18px;
   color: var(--basic-black);
   list-style: none;
-  padding-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 .credit {
@@ -649,6 +697,12 @@ background: var(--basic-light-blue);
   padding: 11px 0 9px 0;
   text-align: center;
   width: 300px;
+}
+
+.info {
+  width: 940px;
+  margin: 0 auto;
+  padding-bottom: 68px;
 }
 
 .main-footer {
@@ -756,15 +810,27 @@ background: var(--basic-light-blue);
 }
 
 .breadcrumb-list {
+  grid-column: 1 / -1;
+  margin-bottom: 20px;
   list-style: none;
+  padding: 0;
+  margin: 20 0;
 }
 
 .directory-section {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 29px 29px 30px 29px;
+  grid-column: 1 / -1;
   font-size: 30px;
+  line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-blue);
   background-color: var(--directory-section-background);
-  padding: 29px 29px 30px 29px;
+}
+
+.selection-column {
+  margin-left: 20px;
 }
 
 .parameter {
@@ -804,6 +870,7 @@ background: var(--basic-light-blue);
 
 .row-filter {
   background-color: var(--beige-row-filter-sorcing);
+  margin-bottom: 28px;
 }
 
 .type-of-sorsing-button {
