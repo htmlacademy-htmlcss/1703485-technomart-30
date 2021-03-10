@@ -318,15 +318,19 @@ input[type="search"]::-webkit-search-results-decoration
   vertical-align: top;
 }
 
-.login-link:hover .intro-icon,
+/* .login-link:hover .intro-icon,
 .card-file:hover .icon-user,
 .card-file:hover .icon-logout {
+  fill: var(--grey-logout);
+} */
+
+.login-link:hover .intro-icon,
+.user-wrap:hover .icon-user {
   fill: var(--grey-logout);
 }
 
 .login-link:active .intro-icon, 
-.card-file:active .icon-user,
-.card-file:active .icon-logout {
+.user-wrap:active .icon-user {
   fill: var(--grey-hover-active);
 }
 
@@ -365,11 +369,11 @@ input[type="search"]::-webkit-search-results-decoration
   margin-bottom: 7px;
 }
 
-.card-file:hover {
+.user-wrap:hover {
   color: var(--basic-black);
 }
 
-.card-file:active {
+.user-wrap:active {
   color: var(--grey-hover-active);
 }
 
@@ -389,9 +393,16 @@ line-height: 21px;
   margin: 0 15px 0 15px;
 }
 
-
 .logout {
   margin-left: 13px;
+}
+
+.logout:hover .icon-logout {
+  fill: var(--grey-logout);
+}
+
+.logout:active .icon-logout {
+  fill: var(--grey-hover-active);
 }
 
 .cabinet {
