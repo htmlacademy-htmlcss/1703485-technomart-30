@@ -318,12 +318,6 @@ input[type="search"]::-webkit-search-results-decoration
   vertical-align: top;
 }
 
-/* .login-link:hover .intro-icon,
-.card-file:hover .icon-user,
-.card-file:hover .icon-logout {
-  fill: var(--grey-logout);
-} */
-
 .login-link:hover .intro-icon,
 .user-wrap:hover .icon-user {
   fill: var(--grey-logout);
