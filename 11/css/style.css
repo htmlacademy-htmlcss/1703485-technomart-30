@@ -319,14 +319,12 @@ input[type="search"]::-webkit-search-results-decoration
 }
 
 .login-link:hover .intro-icon,
-.card-file:hover .icon-user,
-.card-file:hover .icon-logout {
+.user-wrap:hover .icon-user {
   fill: var(--grey-logout);
 }
 
 .login-link:active .intro-icon, 
-.card-file:active .icon-user,
-.card-file:active .icon-logout {
+.user-wrap:active .icon-user {
   fill: var(--grey-hover-active);
 }
 
@@ -344,7 +342,7 @@ input[type="search"]::-webkit-search-results-decoration
   color: var(--basic-blue);
 }
 
-.login:hover, .order-cabinet:hover {
+.login-link:hover, .order-cabinet:hover {
   color: var(--basic-red);
 }
 
@@ -365,11 +363,11 @@ input[type="search"]::-webkit-search-results-decoration
   margin-bottom: 7px;
 }
 
-.card-file:hover {
+.user-wrap:hover {
   color: var(--basic-black);
 }
 
-.card-file:active {
+.user-wrap:active {
   color: var(--grey-hover-active);
 }
 
@@ -389,9 +387,16 @@ line-height: 21px;
   margin: 0 15px 0 15px;
 }
 
-
 .logout {
   margin-left: 13px;
+}
+
+.logout:hover .icon-logout {
+  fill: var(--grey-logout);
+}
+
+.logout:active .icon-logout {
+  fill: var(--grey-hover-active);
 }
 
 .cabinet {
@@ -783,13 +788,13 @@ background: var(--basic-light-blue);
 
 .product-item-wrap {
   position: relative;
+  margin-bottom: 18px;
 }
 
 .product-item {
   display: block;
   position: relative;
   overflow: hidden;
-  margin-bottom: 18px;
   border: 1px solid var(--items-border);
 }
 
@@ -797,7 +802,7 @@ background: var(--basic-light-blue);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
-.product-item:hover {
+.product-item-wrap:hover {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -1292,80 +1297,55 @@ background: var(--basic-light-blue);
   margin-top: 14px;
 }
 
-
 .filter-price {
-  width: 100%;
+  height: 80px;
   background-color: var(--beige-row-filter-sorcing);
   border-radius: 5px;
+  padding: 0 20px;
   position: relative;
 }
 
-.filter-price::before {
-  content: '';
-  background: url('../img/filter-button.svg');
-  border-radius: 50%;
-  box-shadow: 0px 2px 2px var(--toggle-shadow);
-  cursor: pointer;
+.filter-price .scale {
+  height: 2px;
+  background: var(--grey-border);
+  position: relative;
+  top: 40px;
+}
+
+.filter-price .bar {
+  width: 80%;
+  height: 2px;
+  background: var(--basic-green);
+}
+
+.filter-price .toogle {
   position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 30px;
-  left: 20px;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--basic-white);
+  background-color: var(--checkbox-hover-active);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 var(--basic-grey);
+  cursor: pointer;
+}
+
+.filter-price .toogle-min {
+  left: 18px;
+}
+
+.filter-price .toogle-max {
+  left: 160px;
 }
 
 .filter-price input {
   margin: 39px 20px;
 }
 
-input[type=range] {
-  width: 180px;
-  background: var(--green-success);
-  cursor: pointer;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  outline: none;
-}
-
-
-input[type=range]::-webkit-slider-runnable-track {
-  border-radius: 10px/100%;
-  height: 2px;
-  border: 1px solid var(--green-success);
-}
-
-input[type=range]::-moz-range-track {
-  border-radius: 20px;
-  height: 2px;
-  border: 1px solid var(--green-success);
-}
-
-input[type=range]::-webkit-slider-thumb {
-  background: url('../img/filter-button.svg');
-  box-shadow: 0px 2px 2px var(--toggle-shadow);
-  border-radius: 20px;
-  cursor: pointer;
-  width: 20px;
-  height: 20px;
-  -webkit-appearance: none;
-  margin-top: -9px;
-  position: relative;
-}
-
-input[type=range]::-moz-range-thumb {
-  background:  var(--basic-white);
-  box-shadow: 0px 2px 2px var(--bookmark--basket-active-grey);
-  border-radius: 20px;
-  cursor: pointer;
-  width: 20px;
-  height: 20px;
-  -webkit-appearance: none;
-  margin-top: -9px;
-  position: relative;
-}
-
-input[type=range]:focus::-webkit-slider-runnable-track, input[type=range]:focus::-moz-range-track {
-  background-color: transparent;
+.filter-price input {
+  margin: 39px 20px;
 }
 
 .enter {
@@ -1434,18 +1414,24 @@ input[type=range]:focus::-webkit-slider-runnable-track, input[type=range]:focus:
 
 .filter-input-checkbox + label::before {
   content: "";
-  background: url('../img/checkbox-off.svg');
+  border: 2px solid var(--grey-hover-active);
+  border-radius: 3px;
   background-size: contain;
   position: absolute;
   left: -22px;
-  top: -3px;
-  width: 23px;
-  height: 23px;
+  top: -4px;
+  width: 19px;
+  height: 19px;
+}
+
+.filter-input-checkbox:hover + label::before {
+  border: 2px solid var(--checkbox-hover-active);
 }
 
 .filter-input-checkbox:checked + label::after {
   content: "";
   background: url('../img/checkbox-on.svg');
+  background-color: var(--basic-white);
   background-size: contain;
   position: absolute;
   top: -4px;
@@ -1527,10 +1513,17 @@ input[type=range]:focus::-webkit-slider-runnable-track, input[type=range]:focus:
   fill: var(--basic-black);
 }
 
-.low-high svg path:focus, .high-low svg path:focus{
+.low-high:focus svg path, .high-low:focus svg path {
   fill: var(--basic-red);
 }
 
+.high-low:focus + .low-high svg path {
+  fill: var(--grey-hover-active);
+}
+
+.low-high:focus, .high-low:focus {
+  outline: transparent;
+}
 
 .filter {
   padding: 0;
@@ -1550,6 +1543,11 @@ input[type=range]:focus::-webkit-slider-runnable-track, input[type=range]:focus:
   margin-bottom: 28px;
   display:flex;
   align-items: center;
+}
+
+.sort {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .column-filter {
@@ -1634,7 +1632,7 @@ input[type=range]:focus::-webkit-slider-runnable-track, input[type=range]:focus:
   outline-color: var(--basic-blue);
 }
 
-.pagination-active {
+.active-status {
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 13px;
   color: var(--basic-white);
@@ -1645,7 +1643,7 @@ input[type=range]:focus::-webkit-slider-runnable-track, input[type=range]:focus:
   display: inline-block;
 }
 
-.pagination {
+.pagination a {
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 13px;
   color: var(--basic-black);
@@ -1656,12 +1654,25 @@ input[type=range]:focus::-webkit-slider-runnable-track, input[type=range]:focus:
   display: inline-block;
 }
 
-.pagination:hover {
+.pagination a:hover {
   border: 1px solid var(--grey-hover-active);
 }
 
-.pagination:active {
+.pagination a:active {
   border: 1px solid var(--basic-red);
+}
+
+.pagination > .pagination-item-current {
+  background: var(--basic-red);
+  border: 1px solid var(--basic-red);
+  color: var(--basic-white);
+}
+
+.pagination a:focus {
+  background: var(--basic-red);
+  border: 1px solid var(--basic-red);
+  color: var(--basic-white);
+  outline: transparent;
 }
 
 .next {

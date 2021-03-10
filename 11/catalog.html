@@ -54,6 +54,7 @@
           </div>
           <div class="header-login">
             <div class="card-file">
+              <div class="user-wrap">
                 <a class="login user" href="blank.html">
                     <svg class="user-btn" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g class="icon-user" fill="#C5C5C5">
@@ -62,6 +63,7 @@
                     </svg>
                     Равшан Дшамшутович
                 </a>
+              </div>
                 <a class="logout" href="index.html">
                     <svg class="logout-btn" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g class="icon-logout" fill="#C5C5C5">
@@ -119,7 +121,12 @@
                             <legend class="parameter">Цена:</legend>
                         <div class="range-filter">
                             <div class="filter-price">
-                                    <input type="range" min="0" max="30000" step="500" value="25000">
+                              <div class="scale">
+                                <div class="bar"></div>
+                              </div>
+                         
+                              <div class="toogle toogle-min"></div>
+                              <div class="toogle toogle-max"></div>
                             </div>
                             <div class="enter">
                                 <input type="number" placeholder="0" min="0" max="30000" name="minprice">
@@ -185,16 +192,18 @@
                     <button type="button" class="type-of-sorsing activity">По цене</button>
                     <button type="button" class="type-of-sorsing">По типу</button>
                     <button type="button" class="type-of-sorsing">По функционалу</button>
-                    <button type="button" class="low-high">
+                    <div class="sort">
+                      <button type="button" class="high-low">
+                          <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M5.5 0L11 10L0 10" fill="#C5C5C5"/>
+                              </svg>
+                      </button>
+                      <button type="button" class="low-high">
                         <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.5 0L11 10L0 10" fill="#C5C5C5"/>
-                            </svg>
+                            <path d="M5.5 0L11 10L0 10" fill="#EE3643"/>
+                        </svg>
                     </button>
-                    <button type="button" class="high-low">
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.5 0L11 10L0 10" fill="#C5C5C5"/>
-                            </svg>
-                    </button>
+                  </div>
                 </div>
 
                 <section class="result">
@@ -393,16 +402,16 @@
                 </section>
 
                     <ul class="pagination-list">
-                        <li>
-                            <a class="pagination-active">1</a>
+                        <li class="pagination">
+                            <a class= "pagination-item-current">1</a>
                         </li>
-                        <li>
-                            <a class="pagination" href="#">2</a>
+                        <li class="pagination">
+                            <a href="#">2</a>
                         </li>
-                        <li>
-                            <a class="pagination" href="#">3</a>
+                        <li class="pagination">
+                            <a href="#">3</a>
                         </li>
-                        <li>
+                        <li class="pagination">
                             <a class="next" href="#">Следующая</a>
                         </li>
                     </ul>
